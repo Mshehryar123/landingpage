@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #BA798F;
+    display: flex;
+}
+
+#part1 {
+    height: 100%;
+    width: 25%;
+}
+
+#part2 {
+    height: 100%;
+    width: 67%;
+    background-color: rgb(0, 204, 255);
+    background-image: url(https://media.istockphoto.com/id/1430452191/photo/photo-of-a-happy-young-beautiful-woman-using-mobile-phone-smiling-posing-isolated-over-pink.webp?b=1&s=170667a&w=0&k=20&c=pKkKi_7zwjgPZ-LUzz1RjThfqGaPxpI6AA94k4G4YLY=);
+    background-size: cover;
+    background-position: center;
+}
+
+#overly {
+    height: 100%;
+    width: 100%;
+    background-color: #bb54aa21;
+}
+
+#part3 {
+    height: 100%;
+    width: 8%;
+}
+
+#text-div {
+    height: 300px;
+    position: absolute;
+    width: 420px;
+    left: 10%;
+    top: 35%;
+    transform: translate(0, -50);
+    animation: fadeInText 1s ease forwards;
+    opacity: 0;
+}
+
+#text-div > h1 {
+    font-size: 85px;
+    font-family: monument;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    letter-spacing: 30px;
+}
+
+#small-img-div {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background-image: url(https://media.istockphoto.com/id/77931645/photo/woman-and-young-girl-outdoors-with-people-in-background.jpg?s=2048x2048&w=is&k=20&c=U5sPMOFG3fEGcyTaOarrjEpczRi9eQdf0rFw0mJCl20=);
+    background-size: cover;
+    background-position: center;
+    top: 30%;
+    right: 10%;
+    transform: translate(0, -50);
+    animation: fadeInImage 1s ease forwards;
+    opacity: 0;
+}
+
+#overly-in {
+    height: 100%;
+    width: 100%;
+    background-color: #abbb5452;
+}
+
+.navbar {
+    background-color: pink;
+    padding: 15px;
+    animation: fadeInNavbar 1s ease forwards;
+    opacity: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    animation: fadeInNavbar 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translate(0, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: translate(0, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fadeInNavbar {
+    from {
+        opacity: 0;
+        transform: translate(0, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
